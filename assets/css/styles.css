@@ -201,6 +201,13 @@ section {
   gap: 18px;
 }
 
+.panel--minimal {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
 .panel h1,
 .panel h2 {
   margin: 0;
@@ -268,12 +275,6 @@ section {
   letter-spacing: 0.25em;
   font-size: 0.85rem;
   color: var(--text-secondary);
-}
-
-.contact-section {
-  background:
-    linear-gradient(180deg, var(--background-alt-strong) 0%, rgba(0, 0, 0, 0) 50%),
-    var(--background);
 }
 
 .site-footer {
@@ -480,16 +481,13 @@ section {
 
 .life-visual {
   padding: 32px;
-  max-height: 70vh;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .life-grid {
-  max-height: 60vh;
-  overflow-y: auto;
-  padding-right: 8px;
   display: grid;
   gap: 10px;
+  padding-bottom: 80px;
 }
 
 .life-row {

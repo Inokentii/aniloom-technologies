@@ -265,8 +265,8 @@ const initScene = () => {
     },
     {
       id: "contact",
-      position: new THREE.Vector3(0, 3.5, 14),
-      lookAt: new THREE.Vector3(0, 0.4, 0),
+      position: new THREE.Vector3(0.4, 6.4, 11),
+      lookAt: new THREE.Vector3(0, 2.5, 0),
     },
   ];
 
