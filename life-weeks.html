@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Weeks — Aniloom Technologies</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">Aniloom</a>
+      <nav class="site-nav">
+        <a href="education.html">Education</a>
+        <a href="unity-assets.html">Unity Assets</a>
+        <a href="world-clock.html">World Clock</a>
+        <a href="life-weeks.html">Life Weeks</a>
+        <a href="test-scene.html">3D Test</a>
+      </nav>
+      <div class="header-controls">
+        <button class="toggle-button" data-theme-toggle type="button">
+          Night Mode
+        </button>
+        <button class="toggle-button" data-quality-toggle type="button">
+          Low Quality
+        </button>
+      </div>
+    </header>
+
+    <main class="content content--lifted">
+      <section>
+        <div class="panel life-controls">
+          <span class="section-caption">Life calendar</span>
+          <h2>Plot your weeks.</h2>
+          <p>
+            Select your birth date, country, and sex to map how many weeks you have lived and what future milestones look like statistically.
+          </p>
+          <form id="life-form">
+            <label>
+              Birth date
+              <input
+                type="date"
+                id="birth-date"
+                name="birth-date"
+                min="1920-01-01"
+                value="2000-01-01"
+                required
+              />
+            </label>
+            <label>
+              Country
+              <select id="country" name="country"></select>
+            </label>
+            <fieldset>
+              <legend>Sex</legend>
+              <label class="radio-option">
+                <input type="radio" name="sex" value="male" /> Male
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="sex" value="female" checked /> Female
+              </label>
+            </fieldset>
+          </form>
+          <p class="life-caption">
+            Data sources: UN DESA 2022, WHO GHE 2021 — approximated for illustration.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="panel life-visual">
+          <div class="life-grid" id="life-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2025 Aniloom Technologies • Education • Unity Assets
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/life-weeks.js" defer></script>
+  </body>
+</html>

@@ -1,222 +1,104 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aniloom Technologies</title>
-  <meta name="description" content="One hand-picked tool per category. No fluff. Build videos, images, voiceovers, scripts, and music fast." />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Full-viewport animated background -->
-  <canvas id="bg" aria-hidden="true"></canvas>
-  <div id="bg-overlay" aria-hidden="true"></div>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="wrap bar">
-      <div class="brand">
-        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
-          <defs>
-            <linearGradient id="g" x1="0" y1="0" x2="24" y2="24">
-              <stop stop-color="#6ee7b7"/><stop offset="1" stop-color="#7dd3fc"/>
-            </linearGradient>
-          </defs>
-          <path d="M4 12c0-4.418 3.582-8 8-8 1.86 0 3.574.636 4.932 1.699l-2.2 2.2A5 5 0 0 0 12 6C8.686 6 6 8.686 6 12s2.686 6 6 6a5 5 0 0 0 3.899-1.868l2.228 2.228A8 8 0 0 1 12 20c-4.418 0-8-3.582-8-8Z" fill="url(#g)"/>
-        </svg>
-        <strong>Aniloom Technologies</strong>
-      </div>
-      <nav>
-        <a href="#stack">Stack</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cta">Start</a>
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniloom Technologies</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">Aniloom</a>
+      <nav class="site-nav">
+        <a href="education.html">Education</a>
+        <a href="unity-assets.html">Unity Assets</a>
+        <a href="world-clock.html">World Clock</a>
+        <a href="life-weeks.html">Life Weeks</a>
+        <a href="test-scene.html">3D Test</a>
       </nav>
-    </div>
-  </header>
+      <div class="header-controls">
+        <button class="toggle-button" data-theme-toggle type="button">
+          Night Mode
+        </button>
+        <button class="toggle-button" data-quality-toggle type="button">
+          Low Quality
+        </button>
+      </div>
+    </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap grid two">
-      <div>
-        <div class="pill">No fluff • One tool per job</div>
-        <h1 class="title">Create 10× Faster with 8 Battle-Tested AI Tools</h1>
-        <p class="muted">I tested dozens. These are the only ones I recommend. Each link goes to the best-in-class tool with a fair price and strong results.</p>
-        <div class="cta-row">
-          <a class="btn" href="#stack">Explore the Stack</a>
-          <a class="btn secondary" href="#why">Why one per category?</a>
+    <div class="scene-layer">
+      <canvas id="scene-canvas"></canvas>
+    </div>
+
+    <main class="content">
+      <section id="intro-orbit" data-scene-step="orbit">
+        <div class="panel">
+          <span class="section-caption">Intro / Orbit</span>
+          <h1>Aniloom Technologies</h1>
+          <p>AI-driven software development.</p>
+          <p>We build web, mobile, games, and on-chain apps.</p>
         </div>
-        <p class="note">Some links are affiliate links. You pay the same; I may earn a commission that helps keep this page free.</p>
-      </div>
-      <div class="card">
-        <div class="kicker">What you get</div>
-        <ul class="list" role="list">
-          <li><span class="dot"></span>Clear picks: no decision fatigue</li>
-          <li><span class="dot"></span>Fast setup: 15 min from zero to publish</li>
-          <li><span class="dot"></span>Works worldwide (EN ready)</li>
-          <li><span class="dot"></span>Hand-picked for real creators</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Why -->
-  <section id="why">
-    <div class="wrap grid two">
-      <div class="card">
-        <div class="kicker">Principle</div>
-        <h2 class="section-title">One job → one tool.</h2>
-        <p class="muted">Too many options kill momentum. This stack removes friction so you can publish more. Swap any tool later without breaking your workflow.</p>
-      </div>
-      <div class="card">
-        <div class="kicker">How to use</div>
-        <ol class="list">
-          <li><span class="dot"></span>Pick the tool for the task</li>
-          <li><span class="dot"></span>Use the quick-start linked on each card</li>
-          <li><span class="dot"></span>Create, export, publish</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stack -->
-  <section id="stack">
-    <div class="wrap">
-      <div class="kicker">The Stack</div>
-      <h2 class="section-title">8 Tools that Replace an Entire Team</h2>
-      <div class="grid three">
-        <!-- Replace example.com links with your affiliate URLs -->
-        <article class="card tool">
-          <div class="meta"><span class="badge">Video Editing & Creation</span></div>
-          <h3>InVideo</h3>
-          <p class="desc">AI + manual editor for shorts, tutorials, promos. Templates, stock, captions—fast.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/invideo" rel="nofollow noopener">Start with InVideo</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">Full Video Automation</span></div>
-          <h3>StoryShort AI</h3>
-          <p class="desc">Auto-generate Shorts/Reels/TikToks from text in minutes. One-click structure & subtitles.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/storyshort" rel="nofollow noopener">Automate with StoryShort</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">AI Photo Retouch</span></div>
-          <h3>Remini</h3>
-          <p class="desc">Upscale, sharpen, and restore faces and low-res photos. Perfect for thumbnails.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/remini" rel="nofollow noopener">Fix Photos with Remini</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">AI Image Generation</span></div>
-          <h3>Leonardo AI</h3>
-          <p class="desc">Create original images for thumbnails, products, and posts. Powerful, fast, browser-based.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/leonardo" rel="nofollow noopener">Generate with Leonardo</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">Voiceover Generation</span></div>
-          <h3>ElevenLabs</h3>
-          <p class="desc">Studio-quality AI voices for narration and characters. Natural, multilingual.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/elevenlabs" rel="nofollow noopener">Get Voices</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">Script & Copy</span></div>
-          <h3>Writesonic</h3>
-          <p class="desc">Write scripts, hooks, captions, and blog posts fast. Solid quality for the price.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/writesonic" rel="nofollow noopener">Write with Writesonic</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">Music & Sound</span></div>
-          <h3>Soundraw</h3>
-          <p class="desc">Generate royalty-free background tracks tailored to mood and length.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/soundraw" rel="nofollow noopener">Create Music</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-
-        <article class="card tool">
-          <div class="meta"><span class="badge">Design & Layout</span></div>
-          <h3>Canva Pro</h3>
-          <p class="desc">Thousands of templates for thumbnails, posts, and docs. Drag-and-drop simple.</p>
-          <div class="actions">
-            <a class="btn" href="https://example.com/canva" rel="nofollow noopener">Design with Canva</a>
-            <a class="btn secondary" href="#faq">Why this pick?</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta">
-    <div class="wrap card">
-      <div class="grid two">
-        <div>
-          <div class="kicker">Ready?</div>
-          <h2 class="section-title">Build your content engine in a weekend.</h2>
-          <p class="muted">Start with one tool now, add the rest as you grow. Bookmark this page for quick access.</p>
+      <section id="dome-core" data-scene-step="core">
+        <div class="panel">
+          <span class="section-caption">Dome 0</span>
+          <h2>AI-Driven Core</h2>
+          <p>Intelligent systems, assistants, workflows.</p>
         </div>
-        <div class="cta-row">
-          <a class="btn" href="#stack">See the 8 picks</a>
-          <a class="btn secondary" href="#faq">FAQ</a>
+      </section>
+
+      <section id="dome-web" data-scene-step="web">
+        <div class="panel">
+          <span class="section-caption">Dome 1</span>
+          <h2>Web Platforms</h2>
+          <p>Portals, dashboards, APIs.</p>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="wrap grid two">
-      <div class="card">
-        <h3>Why only one tool per category?</h3>
-        <p class="muted">Less choice → more output. I update picks if a better tool beats the current one.</p>
-      </div>
-      <div class="card">
-        <h3>Are these affiliate links?</h3>
-        <p class="muted">Yes. You pay the same price. Commissions help keep this resource free and updated.</p>
-      </div>
-      <div class="card">
-        <h3>What if I’m new?</h3>
-        <p class="muted">Start with <strong>StoryShort</strong> for fast wins, then add <strong>Remini</strong> and <strong>Canva</strong> for thumbnails.</p>
-      </div>
-      <div class="card">
-        <h3>Do these work globally?</h3>
-        <p class="muted">Yes—most have multilingual UIs/outputs. Great for EN audiences worldwide.</p>
-      </div>
-    </div>
-  </section>
+      <section id="dome-mobile" data-scene-step="mobile">
+        <div class="panel">
+          <span class="section-caption">Dome 2</span>
+          <h2>Mobile Apps</h2>
+          <p>iOS, Android, cross-platform.</p>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer wrap">
-    <p>© <span id="y"></span> AI Creator Toolkit • Built for speed • <a href="#" rel="nofollow">Privacy</a></p>
-  </footer>
+      <section id="dome-chain" data-scene-step="web3">
+        <div class="panel">
+          <span class="section-caption">Dome 3</span>
+          <h2>On-chain Apps</h2>
+          <p>Built on existing networks (Ethereum, Solana, etc.).</p>
+        </div>
+      </section>
 
-  <script src="background.js" defer></script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
+      <section id="dome-games" data-scene-step="games">
+        <div class="panel">
+          <span class="section-caption">Dome 4</span>
+          <h2>Games</h2>
+          <p>Unity, real-time VFX, interactive experiences.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" data-scene-step="contact">
+        <div class="panel">
+          <h2>Tell us what you’re building.</h2>
+          <p>Share a brief outline and we’ll craft a tailored response.</p>
+          <a
+            class="primary-action"
+            href="mailto:aniloom.graphics@gmail.com?subject=Project%20estimate%20request&body=Hi%20Aniloom%20team%2C%20I%E2%80%99d%20like%20to%20estimate%20my%20project.%20It%20includes%3A%20"
+          >
+            Contact us
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2025 Aniloom Technologies • Education • Unity Assets
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>

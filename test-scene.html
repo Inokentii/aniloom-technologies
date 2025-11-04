@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Test — Aniloom Technologies</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="site-header">
+      <a class="site-brand" href="index.html">Aniloom</a>
+      <nav class="site-nav">
+        <a href="education.html">Education</a>
+        <a href="unity-assets.html">Unity Assets</a>
+        <a href="world-clock.html">World Clock</a>
+        <a href="life-weeks.html">Life Weeks</a>
+        <a href="test-scene.html">3D Test</a>
+      </nav>
+      <div class="header-controls">
+        <button class="toggle-button" data-theme-toggle type="button">
+          Night Mode
+        </button>
+        <button class="toggle-button" data-quality-toggle type="button">
+          Low Quality
+        </button>
+      </div>
+    </header>
+
+    <div class="scene-layer">
+      <canvas id="scene-canvas"></canvas>
+    </div>
+
+    <main class="content content--lifted">
+      <section id="intro" data-scene-step="intro">
+        <div class="panel">
+          <span class="section-caption">Diagnostics</span>
+          <h1>3D Feature Check</h1>
+          <p>
+            This page runs a lighter Three.js scene—if you see the drifting orb and rings, WebGL is working in your browser.
+          </p>
+          <p>
+            Use this to validate GPU support or troubleshoot local security settings blocking module scripts.
+          </p>
+        </div>
+      </section>
+
+      <section id="details">
+        <div class="panel">
+          <span class="section-caption">Tips</span>
+          <h2>Still seeing nothing?</h2>
+          <p>
+            Try launching the site via a local web server instead of opening files directly (CORS may block module imports). Ensure hardware acceleration is enabled, and update your browser if WebGL2 is unavailable.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2025 Aniloom Technologies • Education • Unity Assets
+    </footer>
+
+    <script src="assets/js/theme.js" defer></script>
+    <script type="module" src="assets/js/test-scene.js"></script>
+  </body>
+</html>
