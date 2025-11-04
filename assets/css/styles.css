@@ -223,6 +223,14 @@ section {
   font-size: clamp(2.1rem, 4vw, 3rem);
 }
 
+.panel.life-visual {
+  max-width: min(1040px, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 36px;
+}
+
 .panel p {
   margin: 0;
   color: var(--text-secondary);
@@ -487,13 +495,15 @@ section {
 .life-grid {
   display: grid;
   gap: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .life-row {
   display: grid;
   grid-template-columns: 60px 1fr;
-  gap: 16px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -501,6 +511,7 @@ section {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-secondary);
+  text-align: right;
 }
 
 .weeks-wrap {
